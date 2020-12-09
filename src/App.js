@@ -1,10 +1,15 @@
 
-import './App.css';
+import React from 'react';
+import ExpenseForm from './components/ExpenseForm';
+import Form from './components/ExpenseForm';
 
 function App() {
   return (
-    <div>HELLO from APP</div>
-  );
+    <div> HELLO from APP
+      <Form />
+    </div>
+    
+    );
 }
 
 export default App;
