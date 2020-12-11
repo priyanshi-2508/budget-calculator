@@ -3,7 +3,7 @@ import React from 'react'
 const ExpenseForm = () => {
     return (
         <div>
-            Hello from expense form..!!
+            Hello from Expense form..!!
         </div>
     )
 }
