@@ -30,15 +30,22 @@ function App() {
     //<ExpenseForm></ExpenseForm>
     //<ExpenseItem></ExpenseItem>
     //</>
-    <div>
+    <>
       <Alert />
       <h1>Budget Calculator</h1>
       <main className="App">
-        <ExpenseList />
+        <ExpenseList expenses={expenses} />
         <ExpenseForm /> 
       </main>
-    </div>
-
+      <h1>
+        Total Spending : <span className="total">
+          $ {expenses.reduce((acc,curr) => {
+            return acc +=curr.amount;
+          },0)}
+        </span>
+      </h1>
+    </>
+  
     );
 }
 
