@@ -33,8 +33,6 @@ function App() {
     <>
       <Alert />
 
-
-      
       <h1>Budget Calculator</h1>
       <main className="App">
         <ExpenseList expenses={expenses} />
